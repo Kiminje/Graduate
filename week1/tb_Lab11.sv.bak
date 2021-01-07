@@ -1,0 +1,35 @@
+`timescale 1ns/1ns
+module tb_Lab11
+#(N=8)();
+	 
+	logic [N-1:0] A, Result;
+	logic [1:0] state;
+	logic s, clk;
+	always begin
+	 #10 clk = 1'b1;
+	 #10 clk = 1'b0;
+	 end
+	 
+	 always @(posedge clk)begin
+	   A = 8'b10101010;
+	   s = 1;
+	   #20;
+	   A = A -3;
+	   #20;
+	   A = A -3;
+	   #20;
+	   s = 0;
+	   A = A -3;
+	   #20;
+	   A = A -3;
+	   end
+	   
+	Lab11_part1 #(.N(N))dut 
+		(.clk(clk), 
+		.data(A), .s(s),
+		.Result(Result),
+		.st(state));
+
+	
+endmodule
+

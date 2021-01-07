@@ -1,0 +1,38 @@
+`timescale 1ns/1ns
+module tb_adder
+#(N=8)();
+	 
+	logic [N-1:0] A, B;
+	logic [N-1:0] Result;
+	logic clk, carry;
+	always begin
+	 #10 clk = 1'b1;
+	 #10 clk = 1'b0;
+	 end
+	 
+	 always @(posedge clk)begin
+	   A = 8'd255;
+	   B = 8'd1;
+	   #10;
+	   A = 8'd240;
+	   B = 8'd11;
+	   #10;
+	   A = 8'd17;
+	   B = 8'd11;
+	   #10;
+	   A = 8'd127;
+	   B = 8'd1;
+	   #10;
+	   A = 8'd128;
+	   B = 8'd11;
+	   #10;
+	   end
+	   
+	NbitAdder #(.N(N))dut 
+		(.A(A), .B(B),
+		.Sw(Result),
+		.carry(carry));
+
+	
+endmodule
+

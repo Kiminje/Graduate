@@ -1,0 +1,30 @@
+module Lab6_part1
+#(N=8)
+(A, S, clk, overflow, carry);
+	input [N-1:0]A;
+	input clk;
+	output reg overflow, carry;
+	output reg [N-1:0]S;
+
+	reg ov;
+	reg ca;
+	reg [N-1:0] sum;
+	reg [N-1:0] in;
+	
+	wire ovw;
+	wire caw;
+	wire [N-1:0] sumw;
+	assign ovw = ov_detector(sum[N-1], sumw[N-1], A[N-1]);
+	NbitAdder #(.N(N)) alu(.A(in), .B(sum), .Sw(sumw), .carry(caw));
+	always @(posedge clk)begin
+		in <= A;
+		overflow <= ovw;
+		carry <= caw;
+		S <= sumw;
+	end
+
+	function automatic bit ov_detector(input sum, sumw, A);
+		ov_detector = (sum == A? 1: 0)?(sumw ==A? 0: 1): 0;
+	endfunction
+
+endmodule

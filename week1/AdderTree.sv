@@ -1,0 +1,30 @@
+
+module AdderTree
+#(N=3)
+(input [2**N-1:0] A, B,
+input clk,
+output [2*2**N -1: 0] P);
+	reg [2*2**N-1:0] sum, Ain, Bin;
+	wire [2*2**N-1:0] psum1[2**N-1:0], psum2[2**N-1:0];
+	wire [2*2**N-1:0] psumw[2*2**N-1:1];
+	genvar j, i;
+	generate
+	for (j=0; j<2**N; j=j+1) begin : generate_partial_sum
+	  assign psum1[j] = Ain<<j;
+	  assign psum2[j] = psum1[j] & {2*2**N{Bin[j]}};
+	  assign psumw[2**N+j] = psum2[j];
+	end
+	for (j=1; j<N+1; j=j+1) begin : generate_partial
+	  for(i=2**(j-1); i<2**j; i=i+1)begin : generate_tree 
+	    NbitAdder #(.N(2*2**N))Adder (.A(psumw[i*2]), .B(psumw[i*2+1]), .Sw(psumw[i]));
+	    //assign psumw[i] = psumw[i*2] + psumw[i*2+1];
+	  end
+	end
+	endgenerate
+	always @(posedge clk)begin
+		sum <= psumw[1];
+		Ain <= {{2**N{0}},A};
+		Bin <= {{2**N{0}},B};
+	end
+	assign P = sum;
+endmodule
