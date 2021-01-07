@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jan  7 14:20:43 2021
+# Process ID: 29737
+# Current directory: /home/inje/workspace/vivado_inje/Week02
+# Command line: vivado
+# Log file: /home/inje/workspace/vivado_inje/Week02/vivado.log
+# Journal file: /home/inje/workspace/vivado_inje/Week02/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/inje/workspace/vivado_inje/Week02/week2/week2.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
