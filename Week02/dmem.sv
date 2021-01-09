@@ -42,17 +42,27 @@ module dmem
 
     // Write operation:
     always_ff @ (posedge clk) begin
-        if (mem_write)
-            data[addr] <= func3[1]? {{32{din[31]}}, din[31:0]}: (func3[0]? {{48{din[15]}}, din[15:0]}: {{56{din[7]}}, din[7:0]});
+        if (mem_write)begin
+            if(func3[1])
+                data[addr][31:0] <= din[31:0];
+            else begin
+                if (func3[0])
+                    data[addr][15:0] <= din[15:0];
+                else data[addr][7:0] <= din[7:0];
+            end
+        end
     end
 
     // Read operation:
     // - dout = 0 if (mem_read==0) 
-    assign dout = (mem_read) ? (func3[2]? (func3[0]?data[addr][15:0]: 
-        data[addr][7:0]):(func3[1]?data[addr]:(func3[0]?data[addr][15:0]:data[addr][7:0]))): 'b0;
+    assign dout = (mem_read) ? (func3[2]? (func3[0]?{48'b0, data[addr][15:0]}: 
+        {56'b0, data[addr][7:0]}):(func3[1]?{{32{data[addr][63]}},data[addr]}:
+        (func3[0]?{{48{data[addr][63]}}, data[addr][15:0]}:{{56{data[addr][63]}}, data[addr][7:0]}))): 'b0;
 
 // synthesis translate_off
     initial begin
+        for (int i = 0; i < DMEM_DEPTH; i++)
+            data[i] = 'b0;
         $readmemh("dmem.mem", data);
     end
 // synthesis translate_on

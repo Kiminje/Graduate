@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../alu.sv" \
+"../../../../week2.srcs/sources_1/new/decoder.sv" \
+"../../../../../dmem.sv" \
+"../../../../../imem.sv" \
+"../../../../../regfile.sv" \
+"../../../../../single_cycle_cpu.sv" \
+"../../../../../tb_single_cycle_cpu.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

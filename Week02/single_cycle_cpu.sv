@@ -22,7 +22,7 @@ module single_cycle_cpu
     input           clk,            // System clock
     input           reset_b         // Asychronous negative reset
 );
-
+    
     // Wires for datapath elements
     logic   [IMEM_ADDR_WIDTH-1:0]   imem_addr;
     logic   [31:0]  inst;   // instructions = an output of ????
@@ -47,15 +47,23 @@ module single_cycle_cpu
      * The control signals are determined by decoding instructions
      * Generating control signals using opcode = inst[6:0]
      */
-    logic   [6:0]   opcode, func7;
+    logic   [6:0]   opcode, func7, signal;
     logic   [2:0]   func3;
     logic   [1:0]   alu_op;
-    logic           branch, alu_src, mem_to_reg, jump;
+    logic           branch, jump;
     //logic         mem_read, mem_write, reg_write; // declared above
     logic   [31:0]  imm32;
     // COMPLETE THE MAIN CONTROL UNIT HERE
-    decoder decoder(opcode, func3, func7, {jump, branch, mem_read, mem2reg, 
-     mem_write, alu_src, reg_write}, alu_control, alu_op);
+    assign opcode = inst[6:0];
+    assign func3 = inst[14:12];
+    assign func7 = inst[31:25];
+    assign {jump, branch, mem_read, mem2reg,mem_write, alu_src, reg_write} = signal;
+    decoder decoder(
+        .opcode(opcode), 
+        .func7(func7), 
+        .func3(func3), 
+        .signal(signal), 
+        .ctrl(alu_control));
      
  /*
 ALU control
@@ -67,10 +75,10 @@ ALU control
 0101: >>>
 0110: -
 0111: XOR
-1000: 
-1001: 
-1010: ==
-1011: !=
+1000: ==
+1001: !=
+1010: 
+1011: 
 1100: set less than <
 1101: >=
 1110: set less than < unsigned
@@ -98,28 +106,30 @@ ALU control
      * Generating immediate value from inst[31:0]
      */
     logic   [63:0]  imm64;
-    logic   [63:0]  imm64_branch,imm64_U, imm64_PC;  // imm64 left shifted by 1
+    logic   [63:0]  imm64_branch, imm64_U;  // imm64 left shifted by 1
 //    logic   [31:0]  imm32;  // 12-bit immediate value extracted from inst
     // COMPLETE IMMEDIATE GENERATOR HERE
     function [63:0] imm_gen;
         input op6, op5, op3, op2;
+        input [3:0] alu_control;
         input [31:0] inst;
         if(op6)begin
             if(op2)begin
                 if(op3) imm_gen = {{45{inst[31]}},inst[31], inst[19:12],inst[20], inst[30:21]}; //JAL
                 else    imm_gen = {{52{inst[31]}},inst[31:20]} ; //JALR
                 end
-           else imm_gen = {{52{inst[31]}},inst[31], inst[7], inst[30:25], inst[11:8]} ;;//Branch
+           else imm_gen = {{52{inst[31]}},inst[31], inst[7], inst[30:25], inst[11:8]};//Branch
            end
        else begin
-           if(op2) imm_gen = {{32{inst[31]}}, inst[31:12]} << 12;
+           if(op2) imm_gen = {{32{inst[31]}}, inst[31:12]} << 12; //U-type
            else begin
                 if(op5) imm_gen = {{52{inst[31]}}, inst[31:25], inst[11:7]}; // S-type
-                else    imm_gen = (func3 == 3'b011)? {{52{1'b0}}, inst[31:20]}:{{52{inst[31]}}, inst[31:20]}; // I-type
+                else    imm_gen = (inst[14:12] == 3'b011)? {{52{1'b0}}, inst[31:20]}:
+                                    ((alu_control== 4'b0101)? {{59{1'b0}}, inst[24:20]}: {{52{inst[31]}}, inst[31:20]}); // I-type
            end
         end                
         endfunction
-    assign imm64 = imm_gen(opcode[6], opcode[5], opcode[3], opcode[2], inst);
+    assign imm64 = imm_gen(opcode[6], opcode[5], opcode[3], opcode[2],alu_control, inst);
     assign imm64_branch = imm64 << 1;
     
 
@@ -144,10 +154,11 @@ ALU control
     // MUXes:
     // COMPLETE MUXES HERE
     // PC_NEXT
-    assign pc_next_branch = imm64_branch + pc_curr;
-    assign pc_next_jump = rs1_dout + imm64;
+    assign pc_next_branch = $signed(imm64_branch) + pc_curr;
+    assign pc_next_jump = opcode[3]? pc_next_branch: ($signed(rs1_dout) + $signed(imm64));
     assign pc_next_plus4 = pc_curr + 'd4;    // FILL THIS
     assign pc_next = (jump & exclusive)? pc_next_jump: ((alu_zero & branch & exclusive)? pc_next_branch : pc_next_plus4);
+    
     // ALU inputs
     assign alu_in1 = rs1_dout;
     assign alu_in2 = alu_src? imm64 : rs2_dout;
@@ -156,16 +167,16 @@ ALU control
     assign rs2 = inst[24:20];
     assign rs1 = inst[19:15];
     assign rd = inst[11:7]; 
-    assign rd_din = reg_write? (opcode[2]? imm64_U : alu_result): 'bz;
+    assign rd_din = opcode[2]? (opcode[4]?imm64_U: pc_next_plus4) : (mem2reg? dmem_dout: alu_result);
     // COMPLETE CONNECTIONS HERE
     // imem
-    assign imem_addr = pc_curr;
+    assign imem_addr = pc_curr[11:2];
     // regfile
     assign imm64_U = opcode[5] ? imm64 : (imm64 + pc_curr);
     // dmem
-    assign dmem_in = rs2_dout;
+    assign dmem_din = rs2_dout;
 //    func3[1]? {32'b0, rs2_dout[31:0]}: (func3[0]? {48'b0, rs2_dout[15:0]}: {56'b0, rs2_dout[7:0]});
-    assign dmem_addr = alu_result;
+    assign dmem_addr = alu_result[9:0];
 
     // -----------------------------------------------------------------------
     /* Instantiation of datapath elements
@@ -208,10 +219,15 @@ ALU control
         .DMEM_ADDR_WIDTH(DMEM_ADDR_WIDTH)
     ) u_dmem_0 (
         .clk    (clk),
-        .addr   (alu_result),
-        .din    (dmem_in),
+        .addr   (dmem_addr),
+        .din    (dmem_din),
         .func3  (func3),
         .mem_read(mem_read),
         .mem_write(mem_write),
-        .dout   (dmem_out));
+        .dout   (dmem_dout));
+    
+    always @(posedge clk) begin
+        $display("[%0t-1] ctrl=[%4b], signal=[%7b], alu=[0x%16h], mid=[0x%16h] pc=[0x%16h]", $time, alu_control[3:0], signal[6:0],alu_result[63:0],u_alu_0.mid, pc_curr);
+        $display("[%0t-2] alu_in1=[0x%16h], alu_in2=[0x%16h], rd_din=[0x%16h], func3=[%3b]", $time, alu_in1, alu_in2, rd_din, func3);
+        end
 endmodule

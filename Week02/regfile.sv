@@ -33,9 +33,14 @@ module regfile
     // Write operation:
     // - Note that clock is not used in the textbook, however in RTL design it can generate a infinite loop without clock.
     // Thus, the write operation is done at the rising edge of clock
+    initial begin
+        for (int i = 0; i < 32; i++)
+            rf_data[i] = 'b0;
+        end
     always_ff @ (posedge clk) begin
         if (reg_write)
-            rf_data[rd] = rd_din;
+            if (|rd)
+                rf_data[rd] = rd_din;
     end
 
     // Read operation

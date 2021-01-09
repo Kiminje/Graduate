@@ -19,17 +19,11 @@ module imem
               IMEM_ADDR_WIDTH = 10 )
 (
     input   [IMEM_ADDR_WIDTH-1:0]   addr,
-    input   wren,
-    input   [31:0]  din,
     output  logic [31:0]  dout
 );
 
     logic   [63:0]  data[0:IMEM_DEPTH-1];
-    
-    always_comb begin
-        if (wren) data[addr] = din;
-        dout = data[addr];
-    end
+    assign dout = data[addr];
 
 // synthesis translate_off
     initial begin

@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/alu.sv,1610177544,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/week2/week2.srcs/sources_1/new/decoder.sv,,alu,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/dmem.sv,1610133157,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/imem.sv,,dmem,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/imem.sv,1610074588,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/regfile.sv,,imem,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/regfile.sv,1610090268,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/single_cycle_cpu.sv,,regfile,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/single_cycle_cpu.sv,1610182286,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/tb_single_cycle_cpu.sv,,single_cycle_cpu,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/tb_single_cycle_cpu.sv,1610170791,systemVerilog,,,,tb_single_cycle_cpu,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/week2/week2.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/week2/week2.srcs/sources_1/new/decoder.sv,1610178477,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week02/dmem.sv,,decoder,,uvm,,,,,,
