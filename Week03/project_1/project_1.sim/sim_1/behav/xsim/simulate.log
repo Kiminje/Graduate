@@ -1,0 +1,444 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+File was opened successfully:      -20000
+[0-pc]-------------------------------------------------------------------------------
+[0-pc] IF.pc=[0xxxxx], ID.pc=[0xxxxx], EX.pc= [0xxxxx], ME.pc=[0xxxxx], WB.pc=[0xxxxx]
+[0-id] if.inst=[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx], id='{pc:64'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,inst:32'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
+[0-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[xxx], id.rs1: xx, id.rs2: xx, id.rd: xx, id.opcode:xxxxxxx
+[0-ex] ex.pc=[xxxxxxxxxxxxxxxx], ex.rs1_dout=[xxxxxxxxxxxxxxxx], ex.rs2_dout=[xxxxxxxxxxxxxxxx], ex.imm=[xxxxxxxxxxxxxxxx], ex.signal=[xxxxxxx], ex.rs1:x, ex.rs2:x, ex.rd:x
+[$forward] check1:xx, ~|(ex.rs1 ^ mem.rd):x, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): x
+[$forward] check2:xx, ~|(ex.rs2 ^ mem.rd):x, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): x
+[0-alu] result:[xxxxxxxx], branch_hit:[x], pc_next:[xxxx], alu_control:[0110], forward_a:[00], forward_b:[00], alu_in1:x, alu_in2:x
+[0-mem] mem.pc=[xxxxxxxxxxxxxxxx], mem.alu_result:[xxxxxxxxxxxxxxxx], mem.mem_dout:[xxxxxxxxxxxxxxxx], mem.rd:[xxxxx], |mem.rd:x, mem.signal:xxxx
+[0-wb] wb.pc=[xxxxxxxxxxxxxxxx], wb.alu_result:[x], wb.dmem_dout:[x], wb.rd:[x], |wb.rd:[x], rd_din:[   0], {wb.reg_write, wb.mem2reg}:xx
+[monitor-reg], reg=['{0,1,2,3,4,5,6,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[10000-pc]-------------------------------------------------------------------------------
+[10000-pc] IF.pc=[0x0000], ID.pc=[0x0000], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[10000-id] if.inst=[00000000000000000010001000000011], id='{pc:0,inst:0}
+[10000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[000], id.rs1: 00, id.rs2: 00, id.rd: 00, id.opcode:0000000
+[10000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[10000-alu] result:[00000000], branch_hit:[0], pc_next:[0004], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[10000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[10000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[20000-pc]-------------------------------------------------------------------------------
+[20000-pc] IF.pc=[0x0000], ID.pc=[0x0000], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[20000-id] if.inst=[00000000000000000010001000000011], id='{pc:0,inst:0}
+[20000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[000], id.rs1: 00, id.rs2: 00, id.rd: 00, id.opcode:0000000
+[20000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[20000-alu] result:[00000000], branch_hit:[0], pc_next:[0004], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[20000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[20000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[30000-pc]-------------------------------------------------------------------------------
+[30000-pc] IF.pc=[0x0000], ID.pc=[0x0000], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[30000-id] if.inst=[00000000000000000010001000000011], id='{pc:0,inst:0}
+[30000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[000], id.rs1: 00, id.rs2: 00, id.rd: 00, id.opcode:0000000
+[30000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[30000-alu] result:[00000000], branch_hit:[0], pc_next:[0004], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[30000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[30000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[40000-pc]-------------------------------------------------------------------------------
+[40000-pc] IF.pc=[0x0004], ID.pc=[0x0000], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[40000-id] if.inst=[00000000100000100010001010000011], id='{pc:0,inst:8707}
+[40000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[010], id.rs1: 00, id.rs2: 00, id.rd: 04, id.opcode:0000011
+[40000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[40000-alu] result:[00000000], branch_hit:[0], pc_next:[0008], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[40000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[40000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[50000-pc]-------------------------------------------------------------------------------
+[50000-pc] IF.pc=[0x0008], ID.pc=[0x0004], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[50000-id] if.inst=[00000000100000100000001100010011], id='{pc:4,inst:8528515}
+[50000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[010], id.rs1: 04, id.rs2: 08, id.rd: 05, id.opcode:0000011
+[50000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 0, ex.rs2: 0, ex.rd: 4
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[50000-alu] result:[00000000], branch_hit:[0], pc_next:[000c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[50000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0007], mem.rd:[00000], |mem.rd:0, mem.signal:1101
+[50000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[60000-pc]-------------------------------------------------------------------------------
+[60000-pc] IF.pc=[0x0008], ID.pc=[0x0004], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[60000-id] if.inst=[00000000100000100000001100010011], id='{pc:4,inst:8528515}
+[60000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000007], func3=[010], id.rs1: 04, id.rs2: 08, id.rd: 05, id.opcode:0000011
+[60000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[60000-alu] result:[00000000], branch_hit:[0], pc_next:[000c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[60000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0007], mem.rd:[00100], |mem.rd:1, mem.signal:1101
+[60000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   7], wb.rd:[ 0], |wb.rd:[0], rd_din:[   7], {wb.reg_write, wb.mem2reg}:11
+[monitor-reg], reg=['{7,1,2,3,4,5,6,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[70000-pc]-------------------------------------------------------------------------------
+[70000-pc] IF.pc=[0x000c], ID.pc=[0x0008], EX.pc= [0x0004], ME.pc=[0x0000], WB.pc=[0x0000]
+[70000-id] if.inst=[00000000000000110010001110000011], id='{pc:8,inst:8520467}
+[70000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000007], func3=[000], id.rs1: 04, id.rs2: 08, id.rd: 06, id.opcode:0010011
+[70000-ex] ex.pc=[0004], ex.rs1_dout=[0004], ex.rs2_dout=[0000], ex.imm=[0008], ex.signal=[0011011], ex.rs1: 4, ex.rs2: 8, ex.rd: 5
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[70000-alu] result:[0000000f], branch_hit:[0], pc_next:[0010], alu_control:[0010], forward_a:[01], forward_b:[00], alu_in1:    7, alu_in2:    8
+[70000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[70000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   7], wb.rd:[ 4], |wb.rd:[1], rd_din:[   7], {wb.reg_write, wb.mem2reg}:11
+[monitor-reg], reg=['{7,1,2,3,7,5,6,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[80000-pc]-------------------------------------------------------------------------------
+[80000-pc] IF.pc=[0x0010], ID.pc=[0x000c], EX.pc= [0x0008], ME.pc=[0x0004], WB.pc=[0x0000]
+[80000-id] if.inst=[00000000000100000000010010010011], id='{pc:12,inst:205699}
+[80000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 07, id.opcode:0000011
+[80000-ex] ex.pc=[0008], ex.rs1_dout=[0007], ex.rs2_dout=[0000], ex.imm=[0008], ex.signal=[0000011], ex.rs1: 4, ex.rs2: 8, ex.rd: 6
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[80000-alu] result:[0000000f], branch_hit:[0], pc_next:[0014], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    7, alu_in2:    8
+[80000-mem] mem.pc=[0004], mem.alu_result:[000f], mem.mem_dout:[0010], mem.rd:[00101], |mem.rd:1, mem.signal:1101
+[80000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[90000-pc]-------------------------------------------------------------------------------
+[90000-pc] IF.pc=[0x0010], ID.pc=[0x000c], EX.pc= [0x0000], ME.pc=[0x0008], WB.pc=[0x0004]
+[90000-id] if.inst=[00000000000100000000010010010011], id='{pc:12,inst:205699}
+[90000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000010], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 07, id.opcode:0000011
+[90000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[90000-alu] result:[00000000], branch_hit:[0], pc_next:[0014], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[90000-mem] mem.pc=[0008], mem.alu_result:[000f], mem.mem_dout:[0000], mem.rd:[00110], |mem.rd:1, mem.signal:0001
+[90000-wb] wb.pc=[0004], wb.alu_result:[  15], wb.dmem_dout:[  16], wb.rd:[ 5], |wb.rd:[1], rd_din:[  16], {wb.reg_write, wb.mem2reg}:11
+[monitor-reg], reg=['{7,1,2,3,7,16,6,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[100000-pc]-------------------------------------------------------------------------------
+[100000-pc] IF.pc=[0x0014], ID.pc=[0x0010], EX.pc= [0x000c], ME.pc=[0x0000], WB.pc=[0x0008]
+[100000-id] if.inst=[01000000100100101000001010110011], id='{pc:16,inst:1049747}
+[100000-decode] stall_by_load_use=[0], rd_din=[0x000000000000000f], func3=[000], id.rs1: 00, id.rs2: 01, id.rd: 09, id.opcode:0010011
+[100000-ex] ex.pc=[000c], ex.rs1_dout=[0006], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 6, ex.rs2: 0, ex.rd: 7
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[100000-alu] result:[0000000f], branch_hit:[0], pc_next:[0018], alu_control:[0010], forward_a:[01], forward_b:[00], alu_in1:   15, alu_in2:    0
+[100000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[100000-wb] wb.pc=[0008], wb.alu_result:[  15], wb.dmem_dout:[   0], wb.rd:[ 6], |wb.rd:[1], rd_din:[  15], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,16,15,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[110000-pc]-------------------------------------------------------------------------------
+[110000-pc] IF.pc=[0x0018], ID.pc=[0x0014], EX.pc= [0x0010], ME.pc=[0x000c], WB.pc=[0x0000]
+[110000-id] if.inst=[00000000000000101000110001100011], id='{pc:20,inst:1083343539}
+[110000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[000], id.rs1: 05, id.rs2: 09, id.rd: 05, id.opcode:0110011
+[110000-ex] ex.pc=[0010], ex.rs1_dout=[0000], ex.rs2_dout=[0001], ex.imm=[0001], ex.signal=[0000011], ex.rs1: 0, ex.rs2: 1, ex.rd: 9
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[110000-alu] result:[00000001], branch_hit:[0], pc_next:[001c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    1
+[110000-mem] mem.pc=[000c], mem.alu_result:[000f], mem.mem_dout:[0010], mem.rd:[00111], |mem.rd:1, mem.signal:1101
+[110000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[120000-pc]-------------------------------------------------------------------------------
+[120000-pc] IF.pc=[0x0018], ID.pc=[0x0014], EX.pc= [0x0000], ME.pc=[0x0010], WB.pc=[0x000c]
+[120000-id] if.inst=[00000000000000101000110001100011], id='{pc:20,inst:1083343539}
+[120000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000010], func3=[000], id.rs1: 05, id.rs2: 09, id.rd: 05, id.opcode:0110011
+[120000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[120000-alu] result:[00000000], branch_hit:[0], pc_next:[001c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[120000-mem] mem.pc=[0010], mem.alu_result:[0001], mem.mem_dout:[0000], mem.rd:[01001], |mem.rd:1, mem.signal:0001
+[120000-wb] wb.pc=[000c], wb.alu_result:[  15], wb.dmem_dout:[  16], wb.rd:[ 7], |wb.rd:[1], rd_din:[  16], {wb.reg_write, wb.mem2reg}:11
+[monitor-reg], reg=['{7,1,2,3,7,16,15,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[130000-pc]-------------------------------------------------------------------------------
+[130000-pc] IF.pc=[0x001c], ID.pc=[0x0018], EX.pc= [0x0014], ME.pc=[0x0000], WB.pc=[0x0010]
+[130000-id] if.inst=[00000000010000110000001100010011], id='{pc:24,inst:167011}
+[130000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000001], func3=[000], id.rs1: 05, id.rs2: 00, id.rd: 18, id.opcode:1100011
+[130000-ex] ex.pc=[0014], ex.rs1_dout=[0010], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000001], ex.rs1: 5, ex.rs2: 9, ex.rd: 5
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:01, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 1
+[130000-alu] result:[0000000f], branch_hit:[0], pc_next:[0020], alu_control:[0110], forward_a:[00], forward_b:[01], alu_in1:   16, alu_in2:    1
+[130000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[130000-wb] wb.pc=[0010], wb.alu_result:[   1], wb.dmem_dout:[   0], wb.rd:[ 9], |wb.rd:[1], rd_din:[   1], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,16,15,16,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[140000-pc]-------------------------------------------------------------------------------
+[140000-pc] IF.pc=[0x001c], ID.pc=[0x0018], EX.pc= [0x0000], ME.pc=[0x0014], WB.pc=[0x0000]
+[140000-id] if.inst=[00000000010000110000001100010011], id='{pc:24,inst:167011}
+[140000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[000], id.rs1: 05, id.rs2: 00, id.rd: 18, id.opcode:1100011
+[140000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[140000-alu] result:[00000000], branch_hit:[0], pc_next:[0020], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[140000-mem] mem.pc=[0014], mem.alu_result:[000f], mem.mem_dout:[0000], mem.rd:[00101], |mem.rd:1, mem.signal:0001
+[140000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[150000-pc]-------------------------------------------------------------------------------
+[150000-pc] IF.pc=[0x0020], ID.pc=[0x001c], EX.pc= [0x0018], ME.pc=[0x0000], WB.pc=[0x0014]
+[150000-id] if.inst=[00000000000000110010010000000011], id='{pc:28,inst:4391699}
+[150000-decode] stall_by_load_use=[0], rd_din=[0x000000000000000f], func3=[000], id.rs1: 06, id.rs2: 04, id.rd: 06, id.opcode:0010011
+[150000-ex] ex.pc=[0018], ex.rs1_dout=[0010], ex.rs2_dout=[0000], ex.imm=[0018], ex.signal=[0100010], ex.rs1: 5, ex.rs2: 0, ex.rd:24
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[150000-alu] result:[fffffff7], branch_hit:[0], pc_next:[0024], alu_control:[0110], forward_a:[01], forward_b:[00], alu_in1:   15, alu_in2:   24
+[150000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[150000-wb] wb.pc=[0014], wb.alu_result:[  15], wb.dmem_dout:[   0], wb.rd:[ 5], |wb.rd:[1], rd_din:[  15], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,15,15,16,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[160000-pc]-------------------------------------------------------------------------------
+[160000-pc] IF.pc=[0x0024], ID.pc=[0x0020], EX.pc= [0x001c], ME.pc=[0x0018], WB.pc=[0x0000]
+[160000-id] if.inst=[11111110100000111101000001100011], id='{pc:32,inst:205827}
+[160000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 08, id.opcode:0000011
+[160000-ex] ex.pc=[001c], ex.rs1_dout=[000f], ex.rs2_dout=[0007], ex.imm=[0004], ex.signal=[0000011], ex.rs1: 6, ex.rs2: 4, ex.rd: 6
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[160000-alu] result:[00000013], branch_hit:[0], pc_next:[0028], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:   15, alu_in2:    4
+[160000-mem] mem.pc=[0018], mem.alu_result:[fffffffffffffff7], mem.mem_dout:[0000], mem.rd:[11000], |mem.rd:1, mem.signal:0000
+[160000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[170000-pc]-------------------------------------------------------------------------------
+[170000-pc] IF.pc=[0x0024], ID.pc=[0x0020], EX.pc= [0x0000], ME.pc=[0x001c], WB.pc=[0x0018]
+[170000-id] if.inst=[11111110100000111101000001100011], id='{pc:32,inst:205827}
+[170000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 08, id.opcode:0000011
+[170000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[170000-alu] result:[00000000], branch_hit:[0], pc_next:[0028], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[170000-mem] mem.pc=[001c], mem.alu_result:[0013], mem.mem_dout:[0000], mem.rd:[00110], |mem.rd:1, mem.signal:0001
+[170000-wb] wb.pc=[0018], wb.alu_result:[18446744073709551607], wb.dmem_dout:[   0], wb.rd:[24], |wb.rd:[1], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[180000-pc]-------------------------------------------------------------------------------
+[180000-pc] IF.pc=[0x0028], ID.pc=[0x0024], EX.pc= [0x0020], ME.pc=[0x0000], WB.pc=[0x001c]
+[180000-id] if.inst=[00000000000001000000001110110011], id='{pc:36,inst:4270051427}
+[180000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000013], func3=[101], id.rs1: 07, id.rs2: 08, id.rd: 00, id.opcode:1100011
+[180000-ex] ex.pc=[0020], ex.rs1_dout=[000f], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 6, ex.rs2: 0, ex.rd: 8
+[$monitor] ex flush by condition: [10]
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[180000-alu] result:[00000013], branch_hit:[0], pc_next:[002c], alu_control:[0010], forward_a:[01], forward_b:[00], alu_in1:   19, alu_in2:    0
+[180000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[180000-wb] wb.pc=[001c], wb.alu_result:[  19], wb.dmem_dout:[   0], wb.rd:[ 6], |wb.rd:[1], rd_din:[  19], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,15,19,16,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[190000-pc]-------------------------------------------------------------------------------
+[190000-pc] IF.pc=[0x0028], ID.pc=[0x0024], EX.pc= [0x0000], ME.pc=[0x0020], WB.pc=[0x0000]
+[190000-id] if.inst=[00000000000001000000001110110011], id='{pc:36,inst:4270051427}
+[190000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[101], id.rs1: 07, id.rs2: 08, id.rd: 00, id.opcode:1100011
+[190000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[190000-alu] result:[00000000], branch_hit:[0], pc_next:[002c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[190000-mem] mem.pc=[0020], mem.alu_result:[0013], mem.mem_dout:[10000], mem.rd:[01000], |mem.rd:1, mem.signal:1101
+[190000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[200000-pc]-------------------------------------------------------------------------------
+[200000-pc] IF.pc=[0x002c], ID.pc=[0x0028], EX.pc= [0x0024], ME.pc=[0x0000], WB.pc=[0x0020]
+[200000-id] if.inst=[00000001010000000000010101100111], id='{pc:40,inst:263091}
+[200000-decode] stall_by_load_use=[0], rd_din=[0x0000000000010000], func3=[000], id.rs1: 08, id.rs2: 00, id.rd: 07, id.opcode:0110011
+[200000-ex] ex.pc=[0024], ex.rs1_dout=[0010], ex.rs2_dout=[0000], ex.imm=[fffffffffffff7e0], ex.signal=[0100010], ex.rs1: 7, ex.rs2: 8, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:01, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 1
+[200000-alu] result:[00000830], branch_hit:[0], pc_next:[0030], alu_control:[0110], forward_a:[00], forward_b:[01], alu_in1:   16, alu_in2:18446744073709549536
+[200000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[200000-wb] wb.pc=[0020], wb.alu_result:[  19], wb.dmem_dout:[65536], wb.rd:[ 8], |wb.rd:[1], rd_din:[65536], {wb.reg_write, wb.mem2reg}:11
+[monitor-reg], reg=['{7,1,2,3,7,15,19,16,65536,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[210000-pc]-------------------------------------------------------------------------------
+[210000-pc] IF.pc=[0x0030], ID.pc=[0x002c], EX.pc= [0x0028], ME.pc=[0x0024], WB.pc=[0x0000]
+[210000-id] if.inst=[00000000010000111010000000100011], id='{pc:44,inst:20972903}
+[210000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[000], id.rs1: 00, id.rs2: 14, id.rd: 0a, id.opcode:1100111
+[210000-ex] ex.pc=[0028], ex.rs1_dout=[10000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000001], ex.rs1: 8, ex.rs2: 0, ex.rd: 7
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[210000-alu] result:[00010000], branch_hit:[0], pc_next:[0034], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:65536, alu_in2:    0
+[210000-mem] mem.pc=[0024], mem.alu_result:[0830], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[210000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[220000-pc]-------------------------------------------------------------------------------
+[220000-pc] IF.pc=[0x0034], ID.pc=[0x0030], EX.pc= [0x002c], ME.pc=[0x0028], WB.pc=[0x0024]
+[220000-id] if.inst=[00000011100000000000010111100111], id='{pc:48,inst:4431907}
+[220000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[010], id.rs1: 07, id.rs2: 04, id.rd: 00, id.opcode:0100011
+[220000-ex] ex.pc=[002c], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[1400000], ex.signal=[1000011], ex.rs1: 0, ex.rs2:20, ex.rd:10
+[$monitor] ex flush by condition: [01]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[220000-alu] result:[00000030], branch_hit:[0], pc_next:[0000], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:20971520
+[220000-mem] mem.pc=[0028], mem.alu_result:[10000], mem.mem_dout:[0000], mem.rd:[00111], |mem.rd:1, mem.signal:0001
+[220000-wb] wb.pc=[0024], wb.alu_result:[2096], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[230000-pc]-------------------------------------------------------------------------------
+[230000-pc] IF.pc=[0x0000], ID.pc=[0x0000], EX.pc= [0x0000], ME.pc=[0x002c], WB.pc=[0x0028]
+[230000-id] if.inst=[00000000000000000010001000000011], id='{pc:0,inst:0}
+[230000-decode] stall_by_load_use=[0], rd_din=[0x0000000000010000], func3=[000], id.rs1: 00, id.rs2: 00, id.rd: 00, id.opcode:0000000
+[230000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[230000-alu] result:[00000000], branch_hit:[0], pc_next:[0004], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[230000-mem] mem.pc=[002c], mem.alu_result:[0030], mem.mem_dout:[0000], mem.rd:[01010], |mem.rd:1, mem.signal:0001
+[230000-wb] wb.pc=[0028], wb.alu_result:[65536], wb.dmem_dout:[   0], wb.rd:[ 7], |wb.rd:[1], rd_din:[65536], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,15,19,65536,65536,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[240000-pc]-------------------------------------------------------------------------------
+[240000-pc] IF.pc=[0x0004], ID.pc=[0x0000], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x002c]
+[240000-id] if.inst=[00000000100000100010001010000011], id='{pc:20971520,inst:8707}
+[240000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000030], func3=[010], id.rs1: 00, id.rs2: 00, id.rd: 04, id.opcode:0000011
+[240000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[240000-alu] result:[00000000], branch_hit:[0], pc_next:[0008], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[240000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[240000-wb] wb.pc=[002c], wb.alu_result:[  48], wb.dmem_dout:[   0], wb.rd:[10], |wb.rd:[1], rd_din:[  48], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,15,19,65536,65536,1,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[250000-pc]-------------------------------------------------------------------------------
+[250000-pc] IF.pc=[0x0008], ID.pc=[0x0004], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[250000-id] if.inst=[00000000100000100000001100010011], id='{pc:20971524,inst:8528515}
+[250000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[010], id.rs1: 04, id.rs2: 08, id.rd: 05, id.opcode:0000011
+[250000-ex] ex.pc=[1400000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 0, ex.rs2: 0, ex.rd: 4
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[250000-alu] result:[00000000], branch_hit:[0], pc_next:[000c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[250000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0007], mem.rd:[00000], |mem.rd:0, mem.signal:1101
+[250000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[260000-pc]-------------------------------------------------------------------------------
+[260000-pc] IF.pc=[0x0008], ID.pc=[0x0004], EX.pc= [0x0000], ME.pc=[0x0000], WB.pc=[0x0000]
+[260000-id] if.inst=[00000000100000100000001100010011], id='{pc:20971524,inst:8528515}
+[260000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000007], func3=[010], id.rs1: 04, id.rs2: 08, id.rd: 05, id.opcode:0000011
+[260000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[260000-alu] result:[00000000], branch_hit:[0], pc_next:[000c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[260000-mem] mem.pc=[1400000], mem.alu_result:[0000], mem.mem_dout:[0007], mem.rd:[00100], |mem.rd:1, mem.signal:1101
+[260000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   7], wb.rd:[ 0], |wb.rd:[0], rd_din:[   7], {wb.reg_write, wb.mem2reg}:11
+[270000-pc]-------------------------------------------------------------------------------
+[270000-pc] IF.pc=[0x000c], ID.pc=[0x0008], EX.pc= [0x0004], ME.pc=[0x0000], WB.pc=[0x0000]
+[270000-id] if.inst=[00000000000000110010001110000011], id='{pc:20971528,inst:8520467}
+[270000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000007], func3=[000], id.rs1: 04, id.rs2: 08, id.rd: 06, id.opcode:0010011
+[270000-ex] ex.pc=[1400004], ex.rs1_dout=[0007], ex.rs2_dout=[10000], ex.imm=[0008], ex.signal=[0011011], ex.rs1: 4, ex.rs2: 8, ex.rd: 5
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[270000-alu] result:[0000000f], branch_hit:[0], pc_next:[0010], alu_control:[0010], forward_a:[01], forward_b:[00], alu_in1:    7, alu_in2:    8
+[270000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[270000-wb] wb.pc=[1400000], wb.alu_result:[   0], wb.dmem_dout:[   7], wb.rd:[ 4], |wb.rd:[1], rd_din:[   7], {wb.reg_write, wb.mem2reg}:11
+[280000-pc]-------------------------------------------------------------------------------
+[280000-pc] IF.pc=[0x0010], ID.pc=[0x000c], EX.pc= [0x0008], ME.pc=[0x0004], WB.pc=[0x0000]
+[280000-id] if.inst=[00000000000100000000010010010011], id='{pc:20971532,inst:205699}
+[280000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 07, id.opcode:0000011
+[280000-ex] ex.pc=[1400008], ex.rs1_dout=[0007], ex.rs2_dout=[10000], ex.imm=[0008], ex.signal=[0000011], ex.rs1: 4, ex.rs2: 8, ex.rd: 6
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[280000-alu] result:[0000000f], branch_hit:[0], pc_next:[0014], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    7, alu_in2:    8
+[280000-mem] mem.pc=[1400004], mem.alu_result:[000f], mem.mem_dout:[0010], mem.rd:[00101], |mem.rd:1, mem.signal:1101
+[280000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[290000-pc]-------------------------------------------------------------------------------
+[290000-pc] IF.pc=[0x0010], ID.pc=[0x000c], EX.pc= [0x0000], ME.pc=[0x0008], WB.pc=[0x0004]
+[290000-id] if.inst=[00000000000100000000010010010011], id='{pc:20971532,inst:205699}
+[290000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000010], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 07, id.opcode:0000011
+[290000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[290000-alu] result:[00000000], branch_hit:[0], pc_next:[0014], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[290000-mem] mem.pc=[1400008], mem.alu_result:[000f], mem.mem_dout:[0000], mem.rd:[00110], |mem.rd:1, mem.signal:0001
+[290000-wb] wb.pc=[1400004], wb.alu_result:[  15], wb.dmem_dout:[  16], wb.rd:[ 5], |wb.rd:[1], rd_din:[  16], {wb.reg_write, wb.mem2reg}:11
+[monitor-reg], reg=['{7,1,2,3,7,16,19,65536,65536,1,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[300000-pc]-------------------------------------------------------------------------------
+[300000-pc] IF.pc=[0x0014], ID.pc=[0x0010], EX.pc= [0x000c], ME.pc=[0x0000], WB.pc=[0x0008]
+[300000-id] if.inst=[01000000100100101000001010110011], id='{pc:20971536,inst:1049747}
+[300000-decode] stall_by_load_use=[0], rd_din=[0x000000000000000f], func3=[000], id.rs1: 00, id.rs2: 01, id.rd: 09, id.opcode:0010011
+[300000-ex] ex.pc=[140000c], ex.rs1_dout=[0013], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 6, ex.rs2: 0, ex.rd: 7
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[300000-alu] result:[0000000f], branch_hit:[0], pc_next:[0018], alu_control:[0010], forward_a:[01], forward_b:[00], alu_in1:   15, alu_in2:    0
+[300000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[300000-wb] wb.pc=[1400008], wb.alu_result:[  15], wb.dmem_dout:[   0], wb.rd:[ 6], |wb.rd:[1], rd_din:[  15], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,16,15,65536,65536,1,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[310000-pc]-------------------------------------------------------------------------------
+[310000-pc] IF.pc=[0x0018], ID.pc=[0x0014], EX.pc= [0x0010], ME.pc=[0x000c], WB.pc=[0x0000]
+[310000-id] if.inst=[00000000000000101000110001100011], id='{pc:20971540,inst:1083343539}
+[310000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[000], id.rs1: 05, id.rs2: 09, id.rd: 05, id.opcode:0110011
+[310000-ex] ex.pc=[1400010], ex.rs1_dout=[0000], ex.rs2_dout=[0001], ex.imm=[0001], ex.signal=[0000011], ex.rs1: 0, ex.rs2: 1, ex.rd: 9
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[310000-alu] result:[00000001], branch_hit:[0], pc_next:[001c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    1
+[310000-mem] mem.pc=[140000c], mem.alu_result:[000f], mem.mem_dout:[0010], mem.rd:[00111], |mem.rd:1, mem.signal:1101
+[310000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[320000-pc]-------------------------------------------------------------------------------
+[320000-pc] IF.pc=[0x0018], ID.pc=[0x0014], EX.pc= [0x0000], ME.pc=[0x0010], WB.pc=[0x000c]
+[320000-id] if.inst=[00000000000000101000110001100011], id='{pc:20971540,inst:1083343539}
+[320000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000010], func3=[000], id.rs1: 05, id.rs2: 09, id.rd: 05, id.opcode:0110011
+[320000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[320000-alu] result:[00000000], branch_hit:[0], pc_next:[001c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[320000-mem] mem.pc=[1400010], mem.alu_result:[0001], mem.mem_dout:[0000], mem.rd:[01001], |mem.rd:1, mem.signal:0001
+[320000-wb] wb.pc=[140000c], wb.alu_result:[  15], wb.dmem_dout:[  16], wb.rd:[ 7], |wb.rd:[1], rd_din:[  16], {wb.reg_write, wb.mem2reg}:11
+[monitor-reg], reg=['{7,1,2,3,7,16,15,16,65536,1,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[330000-pc]-------------------------------------------------------------------------------
+[330000-pc] IF.pc=[0x001c], ID.pc=[0x0018], EX.pc= [0x0014], ME.pc=[0x0000], WB.pc=[0x0010]
+[330000-id] if.inst=[00000000010000110000001100010011], id='{pc:20971544,inst:167011}
+[330000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000001], func3=[000], id.rs1: 05, id.rs2: 00, id.rd: 18, id.opcode:1100011
+[330000-ex] ex.pc=[1400014], ex.rs1_dout=[0010], ex.rs2_dout=[0001], ex.imm=[0000], ex.signal=[0000001], ex.rs1: 5, ex.rs2: 9, ex.rd: 5
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:01, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 1
+[330000-alu] result:[0000000f], branch_hit:[0], pc_next:[0020], alu_control:[0110], forward_a:[00], forward_b:[01], alu_in1:   16, alu_in2:    1
+[330000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[330000-wb] wb.pc=[1400010], wb.alu_result:[   1], wb.dmem_dout:[   0], wb.rd:[ 9], |wb.rd:[1], rd_din:[   1], {wb.reg_write, wb.mem2reg}:10
+[340000-pc]-------------------------------------------------------------------------------
+[340000-pc] IF.pc=[0x001c], ID.pc=[0x0018], EX.pc= [0x0000], ME.pc=[0x0014], WB.pc=[0x0000]
+[340000-id] if.inst=[00000000010000110000001100010011], id='{pc:20971544,inst:167011}
+[340000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[000], id.rs1: 05, id.rs2: 00, id.rd: 18, id.opcode:1100011
+[340000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[340000-alu] result:[00000000], branch_hit:[0], pc_next:[0020], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[340000-mem] mem.pc=[1400014], mem.alu_result:[000f], mem.mem_dout:[0000], mem.rd:[00101], |mem.rd:1, mem.signal:0001
+[340000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[350000-pc]-------------------------------------------------------------------------------
+[350000-pc] IF.pc=[0x0020], ID.pc=[0x001c], EX.pc= [0x0018], ME.pc=[0x0000], WB.pc=[0x0014]
+[350000-id] if.inst=[00000000000000110010010000000011], id='{pc:20971548,inst:4391699}
+[350000-decode] stall_by_load_use=[0], rd_din=[0x000000000000000f], func3=[000], id.rs1: 06, id.rs2: 04, id.rd: 06, id.opcode:0010011
+[350000-ex] ex.pc=[1400018], ex.rs1_dout=[0010], ex.rs2_dout=[0000], ex.imm=[0018], ex.signal=[0100010], ex.rs1: 5, ex.rs2: 0, ex.rd:24
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[350000-alu] result:[fffffff7], branch_hit:[0], pc_next:[0024], alu_control:[0110], forward_a:[01], forward_b:[00], alu_in1:   15, alu_in2:   24
+[350000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[350000-wb] wb.pc=[1400014], wb.alu_result:[  15], wb.dmem_dout:[   0], wb.rd:[ 5], |wb.rd:[1], rd_din:[  15], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,15,15,16,65536,1,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[360000-pc]-------------------------------------------------------------------------------
+[360000-pc] IF.pc=[0x0024], ID.pc=[0x0020], EX.pc= [0x001c], ME.pc=[0x0018], WB.pc=[0x0000]
+[360000-id] if.inst=[11111110100000111101000001100011], id='{pc:20971552,inst:205827}
+[360000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000000], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 08, id.opcode:0000011
+[360000-ex] ex.pc=[140001c], ex.rs1_dout=[000f], ex.rs2_dout=[0007], ex.imm=[0004], ex.signal=[0000011], ex.rs1: 6, ex.rs2: 4, ex.rd: 6
+[$monitor] ex flush by condition: [10]
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[360000-alu] result:[00000013], branch_hit:[0], pc_next:[0028], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:   15, alu_in2:    4
+[360000-mem] mem.pc=[1400018], mem.alu_result:[fffffffffffffff7], mem.mem_dout:[0000], mem.rd:[11000], |mem.rd:1, mem.signal:0000
+[360000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[370000-pc]-------------------------------------------------------------------------------
+[370000-pc] IF.pc=[0x0024], ID.pc=[0x0020], EX.pc= [0x0000], ME.pc=[0x001c], WB.pc=[0x0018]
+[370000-id] if.inst=[11111110100000111101000001100011], id='{pc:20971552,inst:205827}
+[370000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[010], id.rs1: 06, id.rs2: 00, id.rd: 08, id.opcode:0000011
+[370000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[370000-alu] result:[00000000], branch_hit:[0], pc_next:[0028], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[370000-mem] mem.pc=[140001c], mem.alu_result:[0013], mem.mem_dout:[0000], mem.rd:[00110], |mem.rd:1, mem.signal:0001
+[370000-wb] wb.pc=[1400018], wb.alu_result:[18446744073709551607], wb.dmem_dout:[   0], wb.rd:[24], |wb.rd:[1], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[380000-pc]-------------------------------------------------------------------------------
+[380000-pc] IF.pc=[0x0028], ID.pc=[0x0024], EX.pc= [0x0020], ME.pc=[0x0000], WB.pc=[0x001c]
+[380000-id] if.inst=[00000000000001000000001110110011], id='{pc:20971556,inst:4270051427}
+[380000-decode] stall_by_load_use=[1], rd_din=[0x0000000000000013], func3=[101], id.rs1: 07, id.rs2: 08, id.rd: 00, id.opcode:1100011
+[380000-ex] ex.pc=[1400020], ex.rs1_dout=[000f], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0011011], ex.rs1: 6, ex.rs2: 0, ex.rd: 8
+[$monitor] ex flush by condition: [10]
+[$forward] check1:01, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 1
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):1, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[380000-alu] result:[00000013], branch_hit:[0], pc_next:[002c], alu_control:[0010], forward_a:[01], forward_b:[00], alu_in1:   19, alu_in2:    0
+[380000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[380000-wb] wb.pc=[140001c], wb.alu_result:[  19], wb.dmem_dout:[   0], wb.rd:[ 6], |wb.rd:[1], rd_din:[  19], {wb.reg_write, wb.mem2reg}:10
+[monitor-reg], reg=['{7,1,2,3,7,15,19,16,65536,1,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}]
+[390000-pc]-------------------------------------------------------------------------------
+[390000-pc] IF.pc=[0x0028], ID.pc=[0x0024], EX.pc= [0x0000], ME.pc=[0x0020], WB.pc=[0x0000]
+[390000-id] if.inst=[00000000000001000000001110110011], id='{pc:20971556,inst:4270051427}
+[390000-decode] stall_by_load_use=[0], rd_din=[0x0000000000000000], func3=[101], id.rs1: 07, id.rs2: 08, id.rd: 00, id.opcode:1100011
+[390000-ex] ex.pc=[0000], ex.rs1_dout=[0000], ex.rs2_dout=[0000], ex.imm=[0000], ex.signal=[0000000], ex.rs1: 0, ex.rs2: 0, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:00, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 0
+[390000-alu] result:[00000000], branch_hit:[0], pc_next:[002c], alu_control:[0010], forward_a:[00], forward_b:[00], alu_in1:    0, alu_in2:    0
+[390000-mem] mem.pc=[1400020], mem.alu_result:[0013], mem.mem_dout:[10000], mem.rd:[01000], |mem.rd:1, mem.signal:1101
+[390000-wb] wb.pc=[0000], wb.alu_result:[   0], wb.dmem_dout:[   0], wb.rd:[ 0], |wb.rd:[0], rd_din:[   0], {wb.reg_write, wb.mem2reg}:00
+[400000-pc]-------------------------------------------------------------------------------
+[400000-pc] IF.pc=[0x002c], ID.pc=[0x0028], EX.pc= [0x0024], ME.pc=[0x0000], WB.pc=[0x0020]
+[400000-id] if.inst=[00000001010000000000010101100111], id='{pc:20971560,inst:263091}
+[400000-decode] stall_by_load_use=[0], rd_din=[0x0000000000010000], func3=[000], id.rs1: 08, id.rs2: 00, id.rd: 07, id.opcode:0110011
+[400000-ex] ex.pc=[1400024], ex.rs1_dout=[0010], ex.rs2_dout=[10000], ex.imm=[fffffffffffff7e0], ex.signal=[0100010], ex.rs1: 7, ex.rs2: 8, ex.rd: 0
+[$forward] check1:00, ~|(ex.rs1 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs1 ^ wb.rd)): 0
+[$forward] check2:01, ~|(ex.rs2 ^ mem.rd):0, wb.reg_write & (|wb.rd) & (~|(ex.rs2 ^ wb.rd)): 1
+[400000-alu] result:[00000830], branch_hit:[0], pc_next:[0030], alu_control:[0110], forward_a:[00], forward_b:[01], alu_in1:   16, alu_in2:18446744073709549536
+[400000-mem] mem.pc=[0000], mem.alu_result:[0000], mem.mem_dout:[0000], mem.rd:[00000], |mem.rd:0, mem.signal:0000
+[400000-wb] wb.pc=[1400020], wb.alu_result:[  19], wb.dmem_dout:[65536], wb.rd:[ 8], |wb.rd:[1], rd_din:[65536], {wb.reg_write, wb.mem2reg}:11
+$stop called at time : 405 ns : File "C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/tb_pipeline_cpu.sv" Line 48

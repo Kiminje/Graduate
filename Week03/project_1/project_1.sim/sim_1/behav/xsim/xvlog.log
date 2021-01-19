@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'FF' redefined [C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv:16]
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2458] undeclared symbol dout4, assumed default net type wire [C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv:73]
+INFO: [VRFC 10-2458] undeclared symbol dout5, assumed default net type wire [C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv:74]
+INFO: [VRFC 10-2458] undeclared symbol dout6, assumed default net type wire [C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv:75]
+INFO: [VRFC 10-2458] undeclared symbol dout7, assumed default net type wire [C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv:76]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/imem.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'FF' redefined [C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/imem.sv:15]
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/pipeline_cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/tb_pipeline_cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_pipeline_cpu

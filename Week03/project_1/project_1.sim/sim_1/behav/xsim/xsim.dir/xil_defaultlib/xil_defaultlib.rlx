@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/alu.sv,1610832743,systemVerilog,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv;C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/imem.sv;C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/pipeline_cpu.sv;C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/regfile.sv;C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/tb_pipeline_cpu.sv,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv,,$unit_alu_sv;alu,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/dmem.sv,1610961891,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/imem.sv,,dmem,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/imem.sv,1603936142,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/pipeline_cpu.sv,,imem,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/pipeline_cpu.sv,1611087413,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/regfile.sv,,pipeline_cpu,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/regfile.sv,1610976109,systemVerilog,,C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/tb_pipeline_cpu.sv,,regfile,,uvm,,,,,,
+C:/Modeltech_pe_edu_10.4a/NewComers/Graduate/Week03/tb_pipeline_cpu.sv,1610976141,systemVerilog,,,,tb_pipeline_cpu,,uvm,,,,,,
